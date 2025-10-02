@@ -9,24 +9,22 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
   margin: 0;
   padding: 0 50px;
   background-color: #fff;
 }
 
-.logo {
-  margin: 0;
-  padding: 0;
+.logo img {
+  display: block;
   width: 40px;
   height: 40px;
-  opacity: 1;
 }
 
 .nav {
@@ -73,5 +71,8 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 20px;
+}
+
+.nav__item + .nav__item {
+  margin-left: 20px;
 }
